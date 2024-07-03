@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to left, rgb(255, 255, 158), white);
+}
+
+.addNotes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 100px ;
+    align-items: center;
+}
+.addNotes img{
+    width: 100px;
+    margin-right: 15px;
+}
+.addNotes h1{
+    font-size: larger;
+    color: rgb(133, 71, 0);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.addNotes button{
+    color: white;
+    font-size: medium;
+    font-weight: 500px;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-left: 70px;
+}
+.note {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+}
+
+.note input {
+    width: calc(100% - 30px);
+    height: 100px;
+    padding-bottom: 45px;
+    padding-left: 5px;
+    border: solid rgb(133, 71, 0) 1px;
+    border-radius: 15px;
+    font-size: medium;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.note img {
+    position: absolute;
+    bottom: 5px;
+    right: 35px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
